@@ -44,7 +44,7 @@ from sickbeard.exceptions import ex, AuthException
 
 class NewznabProvider(generic.NZBProvider):
 
-    def __init__(self, name, url, key='', catIDs='5030,5040'):
+    def __init__(self, name, url, key='', catIDs='5030,5040,5050,5060,8010'):
 
         generic.NZBProvider.__init__(self, name)
 
@@ -63,7 +63,7 @@ class NewznabProvider(generic.NZBProvider):
         if catIDs:
             self.catIDs = catIDs
         else:
-            self.catIDs = '5030,5040'
+            self.catIDs = '5030,5040,5050,5060,8010'
 
         self.enabled = True
         self.supportsBacklog = True
